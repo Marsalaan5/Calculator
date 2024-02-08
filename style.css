@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("img.jpg");
+  background-size: cover;
+  background-position: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+
+  position: absolute;
+  top: 0%;
+  text-align: center;
+  color: rgba(22, 73, 239, 0.753);
+  text-shadow: 2px 2px 4px rgba(237, 9, 9, 5.9);
+}
+
+.calculator {
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 3px 15px rgba(38, 22, 217, 0.934);
+  background: linear-gradient(90deg, rgb(10, 10, 10), rgb(0, 0, 0));
+}
+
+input::placeholder {
+  color: white;
+}
+
+input {
+  width: 320px;
+  border: 1px dotted white;
+  background: transparent;
+  box-shadow: 0px 3px 115px rgba(238, 16, 16, 0.93);
+  padding: 23px;
+  margin: 10px;
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+  color: white;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  box-shadow: -3px -3px 15px rgba(244, 7, 7, 0.9);
+  cursor: pointer;
+}
+
+.eqlbtn {
+  background-color: rgba(157, 75, 13, 0.955);
+  color: aqua;
+}
+.operator {
+  color: rgb(126, 226, 11);
+}
+.del {
+  color: red;
+}
+.ac {
+  color: aliceblue;
+}
+.mod {
+  color: blueviolet;
+}
+
+@media screen and(max-width:600px) {
+  h1 {
+    font-size: 40px;
+  }
+  input {
+    font-size: 18px;
+    padding: 10px;
+  }
+  button {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    margin: 3px;
+  }
+}
